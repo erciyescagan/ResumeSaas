@@ -1,0 +1,17 @@
+[2020-09-05 14:37:46] local.ERROR: Command "otimize" is not defined.
+
+Did you mean one of these?
+    optimize
+    optimize:clear {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"otimize\" is not defined.
+
+Did you mean one of these?
+    optimize
+    optimize:clear at C:\\wamp\\www\\ResumeSaas\\vendor\\symfony\\console\\Application.php:669)
+[stacktrace]
+#0 C:\\wamp\\www\\ResumeSaas\\vendor\\symfony\\console\\Application.php(235): Symfony\\Component\\Console\\Application->find('otimize')
+#1 C:\\wamp\\www\\ResumeSaas\\vendor\\symfony\\console\\Application.php(147): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\wamp\\www\\ResumeSaas\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\wamp\\www\\ResumeSaas\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\wamp\\www\\ResumeSaas\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
