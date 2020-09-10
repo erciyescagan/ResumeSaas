@@ -18,7 +18,7 @@
 <body id="page-top">
 @include('partials.settings-navigation-bar')
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <a id="profileImage" class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">{{$user->name}}</span>
         <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{asset('templates/professional-v1/assets/img/profile.jpg')}}" alt="" /></span>
     </a>
@@ -40,9 +40,9 @@
     <section class="resume-section" id="about">
         <div class="resume-section-content">
             <h1 class="mb-0">
-                Clarence
-                <span class="text-primary">Taylor</span>
-            </h1>
+                <span id="firstName">Clarence</span>
+                <span id="lastName" class="text-primary">Taylor</span>
+            </h1>   
             <div class="subheading mb-5">
                 3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
                 <a href="mailto:name@email.com">name@email.com</a>

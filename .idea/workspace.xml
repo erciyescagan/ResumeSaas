@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="728f8a44-126a-4b00-8e80-c228fb5f96d5" name="Default Changelist" comment="" />
+    <list default="true" id="728f8a44-126a-4b00-8e80-c228fb5f96d5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/settings-navigation-bar-head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/settings-navigation-bar-head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/settings-navigation-bar-scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/settings-navigation-bar-scripts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/settings-navigation-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/settings-navigation-bar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/292f8d477db3be9a9701c61f5992693520879700.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/292f8d477db3be9a9701c61f5992693520879700.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/f260055383b66385d6aa573f19ef1965c90144d2.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/f260055383b66385d6aa573f19ef1965c90144d2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/feb261f1a3cbd7bd792223d778e43c888a3eb0f3.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/feb261f1a3cbd7bd792223d778e43c888a3eb0f3.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,6 +122,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1gn4MBzNKslWXv3ieq7EmsfM6aN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -210,6 +219,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599345388709" />
+    <state x="1458" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599726281511">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1458" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1599726281511" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1599331016502">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
