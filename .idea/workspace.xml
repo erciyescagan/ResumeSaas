@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="728f8a44-126a-4b00-8e80-c228fb5f96d5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/settings-navigation-bar-head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/settings-navigation-bar-head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/settings-navigation-bar-scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/settings-navigation-bar-scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/settings-navigation-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/settings-navigation-bar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/292f8d477db3be9a9701c61f5992693520879700.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/292f8d477db3be9a9701c61f5992693520879700.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/f260055383b66385d6aa573f19ef1965c90144d2.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/f260055383b66385d6aa573f19ef1965c90144d2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/feb261f1a3cbd7bd792223d778e43c888a3eb0f3.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/feb261f1a3cbd7bd792223d778e43c888a3eb0f3.php" afterDir="false" />
-    </list>
+    <list default="true" id="728f8a44-126a-4b00-8e80-c228fb5f96d5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,9 +9,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -125,11 +115,12 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -139,6 +130,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -153,24 +145,22 @@
       <recent name="C:\wamp\www\ResumeSaas" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.cache">
+    <configuration name="cache" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/bootstrap/cache" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+    <recent_temporary>
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <item itemvalue="PHPUnit.cache" />
       </list>
-    </option>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -191,17 +181,24 @@
       <workItem from="1599202106570" duration="898000" />
       <workItem from="1599316640699" duration="2605000" />
       <workItem from="1599330975363" duration="10543000" />
+      <workItem from="1603142756007" duration="284000" />
+      <workItem from="1603176543514" duration="95000" />
+      <workItem from="1603444037050" duration="185000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Intentions" timestamp="1598741365309">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Intentions/0.0.1366.728@0.0.1366.728" timestamp="1598741365309" />
+    <state x="396" y="76" key="#PHP" timestamp="1603444115532">
+      <screen x="0" y="23" width="1440" height="808" />
+    </state>
+    <state x="396" y="76" key="#PHP/0.23.1440.808@0.23.1440.808" timestamp="1603444115532" />
     <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598898628319">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
