@@ -14,14 +14,20 @@ class ProfileController extends Controller
         $user = User::where('username', $username)->first();
         $auth = Auth::user();
         if ($auth) {
-            if (!$user) {
-                return redirect('/');
+            if (!$user){
+                abort(404);
             }
-            if (is_null($user->template)) {
+            if ($user->id !== auth()->id()) {
+                if (!$user->templateID){
+                    return redirect('/');
+                } else {
+                    return view('templates.'. $user->getTemplate->blade, ['user' => $user]);
+                }
+            }
+            if (!$user->templateID) {
                 return view('profile.choose-a-template');
             } else{
-                $template = Template::findOrFail($user->template);
-                return view($template->blade, ['user' => $user]);
+                return view('templates.'.$user->getTemplate->blade, ['user' => $user]);
             }
         }
 

@@ -15,10 +15,11 @@ class CreateTemplatesTable extends Migration
     {
         Schema::create('templates', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('description');
+            $table->string('name', 255);
+            $table->string('description', 255);
             $table->string('blade');
-            $table->string('image');
+            $table->string('image')->nullable();
+            $table->enum('type', ['FREE', 'PAID']);
 
             $table->timestamps();
         });

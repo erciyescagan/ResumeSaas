@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('partials.settings-navigation-bar-head')
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>{{$user->name}}</title>
+    <title>{{$user->firstName}} {{$user->lastName}}</title>
     <!-- Font Awesome icons (free version)-->
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{{asset('templates/professional-v1/css/styles.css')}}" rel="stylesheet" />
-
+    <style>
+       .subheading a{
+            color: #6c757d;
+           transition: .5s all;
+        }
+       .subheading a:hover{
+           color: #bd5d38;
+           transition: .5s all;
+       }
+    </style>
 </head>
 <body id="page-top">
-@include('partials.settings-navigation-bar')
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a id="profileImage" class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">{{$user->name}}</span>
-        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{asset('templates/professional-v1/assets/img/profile.jpg')}}" alt="" /></span>
+        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{$user->image}}" alt="" /></span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,19 +47,24 @@
     <section class="resume-section" id="about">
         <div class="resume-section-content">
             <h1 class="mb-0">
-                <span id="firstName">Clarence</span>
-                <span id="lastName" class="text-primary">Taylor</span>
-            </h1>   
+                <span id="firstName">{{$user->firstName}}</span>
+                <span id="lastName" class="text-primary">{{$user->lastName}}</span>
+            </h1>
             <div class="subheading mb-5">
-                3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-                <a href="mailto:name@email.com">name@email.com</a>
+                @if(json_decode($user->contacts, true)['address']['visibility'] == 1)
+                    <a target="_blank" href="https://google.com/maps/place/{{json_decode($user->contacts, true)['address']['content']}}">{{json_decode($user->contacts, true)['address']['content']}}</a> ·
+                @endif
+                    @if(json_decode($user->contacts, true)['phone']['visibility'] == 1)
+                        <a href="tel:{{json_decode($user->contacts, true)['phone']['content']}}">{{json_decode($user->contacts, true)['phone']['content']}}</a> ·
+                    @endif
+                <a href="mailto:{{$user->email}}">{{$user->email}}</a>
             </div>
-            <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+            <p class="lead mb-5">{{$user->shortResume}}</p>
             <div class="social-icons">
-                <a class="social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="social-icon" href="#"><i class="fab fa-github"></i></a>
-                <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="social-icon" href="{{json_decode($user->contacts, true)['social']['linkedin']}}"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" href="{{json_decode($user->contacts, true)['social']['github']}}"><i class="fab fa-github"></i></a>
+                <a class="social-icon" href="{{json_decode($user->contacts, true)['social']['twitter']}}"><i class="fab fa-twitter"></i></a>
+                <a class="social-icon" href="{{json_decode($user->contacts, true)['social']['facebook']}}"><i class="fab fa-facebook-f"></i></a>
             </div>
         </div>
     </section>
@@ -217,7 +229,6 @@
         </div>
     </section>
 </div>
-@include('partials.settings-navigation-bar-scripts')
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 <script src="{{asset('templates/professional-v1/js/scripts.js')}}"></script>
